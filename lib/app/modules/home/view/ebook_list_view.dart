@@ -11,15 +11,17 @@ class EbookListView extends StatelessWidget {
   Widget build(BuildContext context) {
     final homeController = Get.put(HomeController());
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Pilih Buku',
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
+      ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Text(
-                'Pilih Buku',
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
               GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: homeController.book.length,

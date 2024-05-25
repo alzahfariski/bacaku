@@ -7,6 +7,7 @@ environment:
   sdk: ">=3.3.0 <4.0.0"
 
 dependencies:
+  audioplayers: ^6.0.0
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
@@ -32,6 +33,9 @@ flutter:
     - assets/
     - assets/logos/
     - assets/images/
+    - assets/flashcard/
+    - assets/audio/
+    - assets/kosa/
   fonts:
     - family: Poppins
       fonts:
