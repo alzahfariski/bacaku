@@ -1,4 +1,5 @@
 import 'package:bacaku/app/modules/home/controller/home_controller.dart';
+import 'package:bacaku/app/modules/home/view/huruf_read_view.dart';
 import 'package:bacaku/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -32,7 +33,7 @@ class HurufListView extends StatelessWidget {
                 ),
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: () => homeController.playSound(homeController.huruf[index].hurufAudio),
+                    onTap: () => Get.to(()=> HurufReadView(id: index)),
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
