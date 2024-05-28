@@ -2,14 +2,12 @@ class BookModel {
   int bookId;
   String bookTitle;
   String bookImg;
-  String bookPath;
+  List<String> bookHal;
 
   BookModel({
     required this.bookId,
     required this.bookTitle,
     required this.bookImg,
-    required this.bookPath,
+    required this.bookHal,
   });
 }
-
-

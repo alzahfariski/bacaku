@@ -14,7 +14,6 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_native_splash: ^2.4.0
   get: ^4.6.6
-  pdfx: ^2.6.0
 
 dev_dependencies:
   flutter_lints: ^3.0.0
@@ -36,6 +35,16 @@ flutter:
     - assets/flashcard/
     - assets/audio/
     - assets/kosa/
+    - assets/cerita/zian_dan_micho/
+    - assets/cerita/hewan_di_laut/
+    - assets/cerita/aku_dan_kucingku/
+    - assets/cerita/saat_libur_sekolah/
+    - assets/cerita/uli_kupu_kupu_yang_indah/
+    - assets/cerita/izan_suka_olahraga/
+    - assets/cerita/indah_anak_yang_mandiri/
+    - assets/cerita/5_sekawan/
+    - assets/cerita/apel_yang_manis/
+    - assets/cerita/aku_senang_sekolah/
   fonts:
     - family: Poppins
       fonts:
