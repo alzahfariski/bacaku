@@ -35,6 +35,8 @@ flutter:
     - assets/flashcard/
     - assets/audio/
     - assets/kosa/
+    - assets/cerita/
+    - assets/cerita/audio_cerita/
     - assets/cerita/zian_dan_micho/
     - assets/cerita/hewan_di_laut/
     - assets/cerita/aku_dan_kucingku/

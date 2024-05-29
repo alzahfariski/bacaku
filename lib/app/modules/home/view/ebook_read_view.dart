@@ -34,15 +34,20 @@ class EbookReadView extends StatelessWidget {
                   Positioned(
                     bottom: 20,
                     right: 20,
-                    child: Container(
-                      height: 40,
-                      width: 40,
-                      decoration: const BoxDecoration(
-                        color: TColors.primary,
-                        shape: BoxShape.circle,
+                    child: GestureDetector(
+                      onTap: () => homeController.playSound(
+                        homeController.book[id].bookAud[index],
                       ),
-                      child: const Icon(
-                        Icons.volume_up_sharp,
+                      child: Container(
+                        height: 40,
+                        width: 40,
+                        decoration: const BoxDecoration(
+                          color: TColors.primary,
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.volume_up_sharp,
+                        ),
                       ),
                     ),
                   ),

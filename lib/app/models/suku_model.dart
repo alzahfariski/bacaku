@@ -1,11 +1,11 @@
 class SukuModel {
-  int hurufId;
-  String hurufImg;
-  String hurufAudio;
+  int sukuId;
+  String sukuContent;
+  String sukuAudio;
 
   SukuModel({
-    required this.hurufId,
-    required this.hurufImg,
-    required this.hurufAudio,
+    required this.sukuId,
+    required this.sukuContent,
+    required this.sukuAudio,
   });
 }

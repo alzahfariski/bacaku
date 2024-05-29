@@ -76,9 +76,9 @@ class _SukuReadViewState extends State<SukuReadView> {
               height: 300,
               child: Center(
                 child: Text(
-                  'Ba',
+                  homeController.suku[currentId].sukuContent,
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                        fontSize: 100,
+                        fontSize: 36,
                         fontWeight: FontWeight.bold,
                         color: const Color(0xff05445E),
                       ),
@@ -88,25 +88,6 @@ class _SukuReadViewState extends State<SukuReadView> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    homeController
-                        .playSound(homeController.bunyi[currentId].hurufAudio);
-                  },
-                  child: Container(
-                    width: 80,
-                    height: 80,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color(0xff189AB4),
-                    ),
-                    child: const Icon(
-                      Icons.volume_up_outlined,
-                      color: TColors.white,
-                      size: 32,
-                    ),
-                  ),
-                ),
                 Text(
                   'Bunyi',
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
@@ -118,7 +99,7 @@ class _SukuReadViewState extends State<SukuReadView> {
                 GestureDetector(
                   onTap: () {
                     homeController
-                        .playSound(homeController.bunyi[currentId].hurufAudio);
+                        .playSound(homeController.suku[currentId].sukuAudio);
                   },
                   child: Container(
                     width: 80,
@@ -171,7 +152,7 @@ class _SukuReadViewState extends State<SukuReadView> {
                         width: 60,
                         height: 60,
                       ),
-                currentId + 1 == homeController.bunyi.length
+                currentId + 1 == homeController.suku.length
                     ? const SizedBox(
                         width: 60,
                         height: 60,

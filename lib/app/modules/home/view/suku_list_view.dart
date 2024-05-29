@@ -24,7 +24,7 @@ class SukuListView extends StatelessWidget {
             children: [
               GridView.builder(
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: homeController.bunyi.length,
+                itemCount: homeController.suku.length,
                 shrinkWrap: true,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
@@ -37,11 +37,32 @@ class SukuListView extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: TColors.primary,
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage(
-                            homeController.bunyi[index].hurufImg,
+                        color: TColors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.12),
+                            spreadRadius: 0,
+                            blurRadius: 4,
+                            offset: const Offset(
+                                2, 2), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(4),
+                          child: Text(
+                            homeController.suku[index].sukuContent,
+                            textAlign: TextAlign.center,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: const Color(0xff0000A3)),
                           ),
                         ),
                       ),
