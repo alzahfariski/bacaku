@@ -52,7 +52,7 @@ class SukuListView extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(4),
                           child: Text(
-                            homeController.suku[index].sukuContent,
+                            homeController.suku[index].sukuHuruf,
                             textAlign: TextAlign.center,
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
@@ -61,7 +61,7 @@ class SukuListView extends StatelessWidget {
                                 .bodyMedium!
                                 .copyWith(
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 16,
+                                    fontSize: 32,
                                     color: const Color(0xff0000A3)),
                           ),
                         ),

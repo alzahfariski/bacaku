@@ -74,15 +74,120 @@ class _SukuReadViewState extends State<SukuReadView> {
             SizedBox(
               width: 300,
               height: 300,
-              child: Center(
-                child: Text(
-                  homeController.suku[currentId].sukuContent,
-                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                        fontSize: 36,
-                        fontWeight: FontWeight.bold,
-                        color: const Color(0xff05445E),
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(14),
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: TColors.primary,
+                    ),
+                    child: Text(
+                      homeController.suku[currentId].sukuHuruf,
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                            fontSize: 48,
+                            fontWeight: FontWeight.bold,
+                            color: const Color(0xff05445E),
+                          ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 14,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(14),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: TColors.primary,
+                        ),
+                        child: Text(
+                          homeController.suku[currentId].sukuHurufa,
+                          style:
+                              Theme.of(context).textTheme.titleLarge!.copyWith(
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff05445E),
+                                  ),
+                        ),
                       ),
-                ),
+                      Container(
+                        padding: const EdgeInsets.all(14),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: TColors.primary,
+                        ),
+                        child: Text(
+                          homeController.suku[currentId].sukuHurufi,
+                          style:
+                              Theme.of(context).textTheme.titleLarge!.copyWith(
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff05445E),
+                                  ),
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(14),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: TColors.primary,
+                        ),
+                        child: Text(
+                          homeController.suku[currentId].sukuHurufu,
+                          style:
+                              Theme.of(context).textTheme.titleLarge!.copyWith(
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff05445E),
+                                  ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 14,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(14),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: TColors.primary,
+                        ),
+                        child: Text(
+                          homeController.suku[currentId].sukuHurufe,
+                          style:
+                              Theme.of(context).textTheme.titleLarge!.copyWith(
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff05445E),
+                                  ),
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(14),
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: TColors.primary,
+                        ),
+                        child: Text(
+                          homeController.suku[currentId].sukuHurufo,
+                          style:
+                              Theme.of(context).textTheme.titleLarge!.copyWith(
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff05445E),
+                                  ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
             Row(
